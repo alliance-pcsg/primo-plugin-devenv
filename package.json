@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "start": "gulp"
+    },
+    "devDependencies": {
+        "angular": "^1.6.8",
+        "babel-minify-webpack-plugin": "^0.2.0",
+        "browser-sync": "^2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "raw-loader": "^0.5.1",
+        "webpack": "^3.10.0",
+        "webpack-stream": "^4.0.0"
+    }
+}
