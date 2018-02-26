@@ -33,4 +33,4 @@ gulp.task('watch-package', () => {
   return gulp.watch('tmp/**/*', bs.reload)
 })
 
-gulp.task('default', ['bundle', 'serve', 'watch-customjs', 'watch-package'])
+gulp.task('default', ['bundle', 'create-customjs', 'watch-customjs', 'watch-package', 'serve'])
