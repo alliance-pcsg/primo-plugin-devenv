@@ -16,7 +16,7 @@ gulp.task('bundle', () => {
 })
 
 gulp.task('create-customjs', () => {
-  return gulp.src(`dist/${fname}.js`, 'test/bootstrap.js'])
+  return gulp.src([`dist/${fname}.js`, 'test/bootstrap.js'])
     .pipe(concat('custom.js'))
     .pipe(gulp.dest('tmp/js'))
 })
@@ -26,7 +26,7 @@ gulp.task('serve', () => {
 })
 
 gulp.task('watch-customjs', () => {
-  return gulp.watch(`dist/${fname}.js`, 'test/bootstrap.js'], ['create-customjs'])
+  return gulp.watch([`dist/${fname}.js`, 'test/bootstrap.js'], ['create-customjs'])
 })
 
 gulp.task('watch-package', () => {
